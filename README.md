@@ -64,8 +64,8 @@ These applications assume population-level analysis and retrospective data explo
   - **1** = Heart disease present
   - **0** = No heart disease
 - Class Distribution:
-- 862 positive cases
-- 882 negative cases (balanced dataset)
+  - **862** positive cases
+  - **882** negative cases (balanced dataset)
 
 ## Key Features
 - Age
@@ -257,5 +257,6 @@ Model outputs represent probabilistic risk estimates rather than deterministic p
 This project is **not a certified medical device** and must not be used for clinical decision-making.
 
 ## Author
-Medical AI & Healthcare Data Science Consultant
+
+**Medical AI & Healthcare Data Science Consultant**  
 MBBS with specialization in applied machine learning, clinical risk modeling, and healthcare decision-support prototyping.
