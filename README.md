@@ -9,6 +9,12 @@ Heart Disease Risk Prediction Using Machine Learning
 ![Explainability](https://img.shields.io/badge/Explainability-SHAP-purple)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)]()
 
+## 🚀 Live Demo
+Try the interactive Streamlit app:  
+🔗 https://heart-disease-risk-analysis-fp3kwoltyssc86y3pldvuz.streamlit.app/
+
+[![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://heart-disease-risk-analysis-fp3kwoltyssc86y3pldvuz.streamlit.app/)
+
 ## Overview
 Cardiovascular disease is a leading global cause of morbidity and mortality. Early identification of individuals at high risk enables timely intervention and improved clinical outcomes.
 This project develops and evaluates multiple machine learning models to predict the presence of heart disease using structured patient health data.
@@ -55,8 +61,8 @@ These applications assume population-level analysis and retrospective data explo
 - Source: raw_merged_heart_dataset.csv (Kaggle Heart Disease Prediction) The dataset represents a merged retrospective cohort compiled from multiple public heart disease studies.
 - Sample Size: 1,744 patients (after data cleaning)
 - Target Variable:
-- 1 = Heart disease present
-- 0 = No heart disease
+  - **1** = Heart disease present
+  - **0** = No heart disease
 - Class Distribution:
 - 862 positive cases
 - 882 negative cases (balanced dataset)
@@ -100,7 +106,7 @@ Evaluation was performed on a held-out test set.
 
 - **Random Forest** achieved the strongest overall performance  
   - Highest **F1 Score (0.959)** and **ROC–AUC (0.995)**
-  - Excellent balance of precision and recall, making it suitable for experimental risk  stratification in retrospective datasets.
+  - Excellent balance of precision and recall, making it suitable for experimental risk stratification in retrospective datasets.
 - **LightGBM** is used as a complementary model  
   - Slightly lower predictive performance
   - Faster inference and strong compatibility with SHAP explanations
@@ -151,12 +157,11 @@ Using LightGBM for SHAP ensures stable and computationally efficient explanation
 ![Figure 6: Bar Chart Comparison](visuals/model_comparison_metrics.png)
 ![Figure 7: Feature Importance Plot](visuals/feature_importance_lightgbm.png)
 ![Figure 8: SHAP Summary Plot](visuals/SHAP_summary_lightgbm.png)
-Additional visuals, including confusion matrices for each model, are available in the Technical Appendix (see `report/Heart_Disease_Prediction_Executive_Summary.pdf`).
-
+Additional visuals, including confusion matrices for each model, are available in the Technical Appendix (see `report/Heart_Disease_Risk_Analysis_Report.pdf`).
 
 ## Folder Structure
 ```
-Heart-Disease-Prediction/
+heart-disease-risk-analysis/
 ├── data/
 │   └── raw_merged_heart_dataset.csv
 ├── src/
@@ -164,9 +169,9 @@ Heart-Disease-Prediction/
 │   ├── eda_model_comparison.ipynb
 │   └── app.py   
 ├── visuals/
-    └── [All plots: SHAP, feature importance, etc.]
+│   └── [All plots: SHAP, feature importance, etc.]
 ├── report/
-│   └── Heart_Disease_Prediction_Executive_Summary.pdf
+│   └── Heart_Disease_Risk_Analysis_Report.pdf
 ├── requirements.txt
 ├── MODEL_CARD.md
 ├── README.md
@@ -177,24 +182,32 @@ Heart-Disease-Prediction/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/global-ad-snap/heart-disease-prediction.git
-   cd heart-disease-prediction
+   git clone https://github.com/global-ad-snap/heart-disease-risk-analysis.git
+   cd heart-disease-risk-analysis
+   ```
 2. Create a virtual environment:
+   ```bash
    python -m venv venv
+   ```
 3. Activate the virtual environment:
+   ```bash
    source venv/bin/activate   # macOS/Linux
    venv\Scripts\activate      # Windows
+   ```
 4. Install dependencies:
+   ```bash
    pip install -r requirements.txt
+   ```
 
 ## How to Run
 
 1. Open the terminal in the project directory.
 2. Run the pipeline:
-   ```
+   ```bash
    python src/heart_disease_pipeline.py
-> The script will generate evaluation metrics and save visualizations in the `visuals/` folder.
----
+   ``` 
+> The script will generate evaluation metrics and save visualizations in the visuals/ folder.
+
 
 ## Streamlit Demo
 
