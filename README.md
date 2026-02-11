@@ -29,11 +29,13 @@ The primary value of this project lies in demonstrating how machine learning–b
 - Identify clinically meaningful risk factors using model interpretability tools
 - Provide a transparent, research-oriented decision-support prototype
 
+---
 ## Intended Use
 This project is intended as a **research and decision-support prototype** demonstrating machine learning–based risk prediction and model interpretability for heart disease using structured clinical features.
 The analysis is designed for **educational purposes, technical evaluation, and exploratory risk stratification** only. It is not intended to guide individual patient diagnosis, treatment decisions, or clinical care pathways.
 Any real-world deployment would require **external validation, institutional review, and appropriate regulatory and clinical governance approval**.
 
+---
 ## Potential Clinical & Operational Applications
 
 This model is designed as a **population-level risk stratification and decision-support prototype**, rather than an individual diagnostic tool.
@@ -57,6 +59,7 @@ Acting as a proof-of-concept model for startups or research teams developing ear
 
 These applications assume population-level analysis and retrospective data exploration and are not intended for real-time clinical decision-making without prospective validation and regulatory approval.
 
+---
 ## Dataset
 - Source: raw_merged_heart_dataset.csv (Kaggle Heart Disease Prediction) The dataset represents a merged retrospective cohort compiled from multiple public heart disease studies.
 - Sample Size: 1,744 patients (after data cleaning)
@@ -102,6 +105,7 @@ These applications assume population-level analysis and retrospective data explo
 
 Evaluation was performed on a held-out test set.
 
+---
 ## Best Model
 
 - **Random Forest** achieved the strongest overall performance  
@@ -177,7 +181,7 @@ heart-disease-risk-analysis/
 ├── README.md
 ```
 
-
+---
 ## Installation
 
 1. Clone the repository:
@@ -221,7 +225,7 @@ An interactive Streamlit web application allows users to:
 > While Random Forest achieves the highest predictive performance,  
 > LightGBM is used in the Streamlit demo for faster inference and robust SHAP compatibility.
 
-
+---
 ## Deployment Considerations
 
 ### Operational Integration
@@ -276,7 +280,7 @@ This project demonstrates applied capabilities relevant to:
 
 In a consulting engagement, this work would be delivered as a **risk prediction prototype**, accompanied by documentation outlining model performance, limitations, and ethical considerations.
 
-
+---
 ## Clinical Impact
 
 ### Potential Value Drivers
@@ -310,7 +314,44 @@ Typical ROI evaluation would include:
 
 Formal ROI validation requires real-world deployment data.
 
+---
+## Validation & Reliability Considerations
 
+### Dataset Limitations
+
+Results are dependent on dataset scope, quality, and representativeness. Potential limitations include sample bias, missing data, and historical data constraints. External validation on independent datasets would be required before operational deployment.
+
+### Model Validation Approach
+
+Validation methods may include:
+
+- Train/test separation or cross-validation
+- Performance metrics relevant to the use case
+- Sensitivity to class imbalance where applicable
+- Error pattern analysis
+
+These steps help estimate generalization performance but do not replace real-world validation.
+
+### Clinical / Operational Validation Requirements
+
+For healthcare or high-stakes applications, additional validation typically includes:
+
+- Prospective evaluation in operational settings
+- Clinical or domain expert review
+- Workflow compatibility testing
+- Safety and performance monitoring after deployment
+
+Formal regulatory approval may be required depending on jurisdiction and intended use.
+
+### Performance Interpretation
+
+Model outputs should be interpreted cautiously:
+
+- Predictions support, not replace, expert decision-making
+- Performance metrics reflect dataset conditions
+- Continuous monitoring is recommended post-deployment
+
+---
 
 ## Client-Ready Deliverables
 In a real-world consulting engagement, this project would be delivered as:
@@ -321,6 +362,7 @@ In a real-world consulting engagement, this project would be delivered as:
 - Interactive demo or dashboard (Streamlit)
 - Model card and risk & limitation documentation
 
+---
 ## License
 
 This project is licensed under the **MIT License**.  
