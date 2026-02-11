@@ -221,7 +221,6 @@ An interactive Streamlit web application allows users to:
 > While Random Forest achieves the highest predictive performance,  
 > LightGBM is used in the Streamlit demo for faster inference and robust SHAP compatibility.
 
----
 
 ## Deployment Considerations
 
@@ -260,8 +259,6 @@ Deployment should consider:
 - Regulatory context where applicable (e.g., healthcare AI)
 
 Formal validation would be required before operational use.
-
----
 
 ### Environment
 - Python **3.9 or 3.10** recommended  
