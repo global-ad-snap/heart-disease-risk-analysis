@@ -277,7 +277,7 @@ This project demonstrates applied capabilities relevant to:
 In a consulting engagement, this work would be delivered as a **risk prediction prototype**, accompanied by documentation outlining model performance, limitations, and ethical considerations.
 
 
-## Business / Clinical Impact
+## Clinical Impact
 
 ### Potential Value Drivers
 
